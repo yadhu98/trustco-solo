@@ -117,7 +117,6 @@ footer {
 .hero1,
 .hero2 {
     display: none;
-    /* Hidden on mobile */
 }
 
 .hero3 {
@@ -141,12 +140,9 @@ footer {
 
 #hero p {
     font-size: 1.25rem;
-    /* Slightly larger for readability */
     color: var(--text-color);
     max-width: 650px;
-    /* Limit width for readability */
     margin: 0 auto 2rem auto;
-    /* Center and space below */
 }
 
 
@@ -157,7 +153,6 @@ footer {
     justify-content: center;
     gap: 1rem;
     width: 800px;
-    /* Space between buttons */
 }
 
 .btn {
@@ -168,7 +163,6 @@ footer {
     border-radius: 4px;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    /* Smooth transitions */
 }
 
 .primary-btn {
@@ -207,16 +201,16 @@ footer {
 
 #client-brand-section {
     display: flex;
-    padding: 4rem 6rem;
-    justify-content: space-between;
+    padding: 4rem 1rem;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 #client-brand-section .client-brands {
     display: flex;
     align-items: center;
-    gap: 50px;
     flex-wrap: wrap;
+    margin-left: 130px;
 }
 
 
@@ -246,6 +240,45 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    #client-brand-section {
+        padding: 2rem 1rem;
+    }
+    #client-brand-section>div>p {
+        font-size: 0.8rem;
+    }
+    .client-brands {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 1rem;
+        justify-content: center;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-left: 0px !important;
+    }
+    .client-brands img:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .client-brands img:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .client-brands img:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .client-brands img:nth-child(4) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .client-brands img:nth-child(5) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .client-brands img {
+        max-width: 75px;
     }
 }
 
@@ -287,6 +320,23 @@ footer {
         align-items: center;
         justify-content: center;
         width: 800px;
+    }
+    #client-brand-section {
+        padding: 4rem 1rem;
+        display: flex;
+        align-items: center;
+        padding: 4rem 12rem;
+    }
+    #client-brand-section>div>p {
+        font-size: 1rem;
+    }
+    .client-brands {
+        max-width: 1200px;
+        gap: 100px;
+        margin-left: 50px !important;
+    }
+    .client-brands img {
+        max-width: 150px;
     }
 }
 
