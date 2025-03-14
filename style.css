@@ -461,6 +461,9 @@ footer {
 }
 
 @media (min-width: 1024px) {
+    .logo {
+        width: 30%;
+    }
     #hero {
         padding: 15rem 6rem 4rem 6rem;
         display: flex;
