@@ -122,13 +122,9 @@ footer {
 
 .hero3 {
     display: block;
-    /* Visible on mobile */
     max-width: 100%;
-    /* Scale to container width */
     height: auto;
-    /* Maintain aspect ratio */
     margin: 0 auto 1rem auto;
-    /* Center and space below */
 }
 
 #hero h1 {
@@ -209,6 +205,20 @@ footer {
     border: 55px;
 }
 
+#client-brand-section {
+    display: flex;
+    padding: 4rem 6rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#client-brand-section .client-brands {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
 
 /* Mobile Breakpint  */
 
@@ -241,7 +251,7 @@ footer {
 
 @media (min-width: 1024px) {
     #hero {
-        padding: 4rem 2rem;
+        padding: 4rem 6rem;
         display: flex;
         flex-direction: row;
         align-items: center;
