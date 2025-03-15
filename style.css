@@ -773,7 +773,7 @@ footer {
         text-align: left;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     .benefits-btn {
         font-size: 1rem;
@@ -786,7 +786,7 @@ footer {
     }
     .benefits-header p {
         font-size: 1rem;
-        text-align: left;
+        text-align: center;
     }
     .benefits-grid {
         display: flex;
@@ -814,6 +814,7 @@ footer {
     }
     .benefits-content {
         flex-direction: row;
+        align-items: flex-start;
     }
     .benefits-header {
         margin-bottom: 2rem;
@@ -831,6 +832,7 @@ footer {
     }
     .benefits-header p {
         font-size: 1.25rem;
+        text-align: left;
     }
     .benefits-grid {
         display: grid;
