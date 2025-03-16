@@ -1124,6 +1124,9 @@ footer {
 }
 
 @media (min-width: 375px) {
+    #numbers-section {
+        padding: 2rem;
+    }
     .numbers-section-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1147,6 +1150,9 @@ footer {
         font-size: 3rem;
     }
 }
+
+
+/* Meet the founder section */
 
 #meet-founder-section {
     padding: 1rem 2rem;
@@ -1219,6 +1225,121 @@ footer {
 
 #decoration img {
     padding: 1rem;
+}
+
+@media (min-width: 375px) {
+    #meet-founder-section {
+        padding: 1rem;
+    }
+    .meet-founder-section-content {
+        flex-direction: column;
+    }
+    .meet-founder-image-section {
+        align-items: center;
+        width: 100%;
+    }
+    .meet-founder-section-testimonial {
+        padding: 4rem 2rem;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .meet-founder-section-testimonial h1 {
+        font-size: 1.8rem;
+    }
+    .meet-founder-section-testimonial #founder-says {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .meet-founder-section-testimonial .view-reports-btn {
+        font-size: 0.8rem;
+    }
+    .meet-founder-image-section #founder-main {
+        width: 350px;
+    }
+    .meet-founder-image-section #women-circle {
+        width: 150px;
+    }
+    .meet-founder-image-section #decoration {
+        top: 90px;
+        width: 50px;
+        height: 160px;
+        right: 18%;
+    }
+    #decoration img {
+        padding: 0.5rem;
+        width: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #meet-founder-section {
+        padding: 1rem 2rem;
+        margin-top: 3%;
+    }
+    .meet-founder-section-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .meet-founder-image-section {
+        position: relative;
+        width: 40%;
+    }
+    .meet-founder-section-testimonial {
+        padding: 4rem 5rem;
+        width: 700px;
+        align-items: flex-start;
+    }
+    .meet-founder-section-testimonial h1 {
+        font-size: 3.75rem;
+        text-align: left;
+    }
+    .meet-founder-section-testimonial #founder-says {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .founder-profile-name-desg {
+        display: flex;
+        flex-direction: column;
+    }
+    .meet-founder-section-testimonial .view-reports-btn {
+        margin-top: 10%;
+        position: relative;
+    }
+    .founder-profile-name-desg :first-child {
+        font-weight: 800;
+    }
+    .founder-profile-name-desg :nth-child(2) {
+        font-weight: 100;
+        font-size: 0.8rem;
+    }
+    .meet-founder-image-section #founder-main {
+        position: relative;
+        z-index: 1;
+        width: 750px;
+    }
+    .meet-founder-image-section #women-circle {
+        position: absolute;
+        z-index: 2;
+        bottom: -20px;
+        width: 300px;
+    }
+    .meet-founder-image-section #decoration {
+        position: absolute;
+        background-color: var(--primary-color);
+        height: 281px;
+        width: 104px;
+        top: 200px;
+        right: 7%;
+        z-index: 0;
+        border-radius: 1000px;
+    }
+    #decoration img {
+        width: 100px;
+        padding: 1rem;
+    }
 }
 
 
