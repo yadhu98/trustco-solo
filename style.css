@@ -1098,7 +1098,7 @@ footer {
 /* Numbers section */
 
 #numbers-section {
-    padding: 2rem 1rem;
+    padding: 2rem 5rem;
 }
 
 .numbers-section-content {
@@ -1146,6 +1146,79 @@ footer {
         color: var(--primary-color);
         font-size: 3rem;
     }
+}
+
+#meet-founder-section {
+    padding: 1rem 2rem;
+    margin-top: 3%;
+}
+
+.meet-founder-section-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.meet-founder-image-section {
+    position: relative;
+    width: 40%;
+}
+
+.meet-founder-section-testimonial {
+    padding: 4rem 5rem;
+    width: 700px;
+}
+
+.meet-founder-section-testimonial h1 {
+    font-size: 3.75rem;
+}
+
+.meet-founder-section-testimonial #founder-says {
+    font-size: 1.5rem;
+}
+
+.founder-profile-name-desg {
+    display: flex;
+    flex-direction: column;
+}
+
+.meet-founder-section-testimonial .view-reports-btn {
+    margin-top: 10%;
+    position: relative;
+}
+
+.founder-profile-name-desg :first-child {
+    font-weight: 800;
+}
+
+.founder-profile-name-desg :nth-child(2) {
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+.meet-founder-image-section #founder-main {
+    position: relative;
+    z-index: 1;
+}
+
+.meet-founder-image-section #women-circle {
+    position: absolute;
+    z-index: 2;
+    bottom: -20px;
+}
+
+.meet-founder-image-section #decoration {
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 281px;
+    width: 104px;
+    top: 200px;
+    right: 10%;
+    z-index: 0;
+    border-radius: 1000px;
+}
+
+#decoration img {
+    padding: 1rem;
 }
 
 
