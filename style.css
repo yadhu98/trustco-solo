@@ -1123,6 +1123,31 @@ footer {
     color: var(--text-color-gray-two);
 }
 
+@media (min-width: 375px) {
+    .numbers-section-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10%;
+    }
+    .number-secton-text h1 {
+        margin-bottom: 0px;
+        color: var(--primary-color);
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .numbers-section-content {
+        display: flex;
+    }
+    .number-secton-text h1 {
+        margin-bottom: 0px;
+        color: var(--primary-color);
+        font-size: 3rem;
+    }
+}
+
 
 /* Other Structural Elements */
 
