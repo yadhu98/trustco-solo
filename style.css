@@ -1081,6 +1081,7 @@ footer {
     .award-badge h1 {
         color: var(--color-white);
         margin-bottom: 0px;
+        font-size: 2rem;
     }
     .building-bridges-text {
         display: flex;
