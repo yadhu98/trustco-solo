@@ -987,3 +987,121 @@ footer {
     border-radius: 42px;
     background-color: var(--primary-color);
 }
+
+@media (min-width: 375px) {
+    #building-bridges-section {
+        padding: 4rem 2rem;
+    }
+    .building-bridges-content {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .building-bridges-text {
+        align-items: center;
+    }
+    .building-bridges-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .building-bridges-text p {
+        font-size: 0.78rem;
+        text-align: center;
+    }
+    .view-reports-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        justify-self: center;
+    }
+    .view-reports-btn span {
+        font-size: 1.25rem;
+    }
+    .award-badge {
+        width: 125px;
+        height: 125px;
+        left: 90%
+    }
+    .award-badge img {
+        width: 20px;
+        height: 20px;
+    }
+    .award-badge span {
+        color: var(--color-white);
+        font-weight: 300;
+        font-size: 0.8rem;
+    }
+    .award-badge h1 {
+        color: var(--color-white);
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .building-bridges-content {
+        flex-direction: row;
+        gap: 10rem;
+        text-align: left;
+    }
+    .building-bridges-image {
+        width: 55%;
+    }
+    .building-bridges-text h2 {
+        font-size: 2.5rem;
+    }
+    .award-badge {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 10%;
+        left: 100%;
+        transform: translateX(-50%);
+        background-color: var(--accent-color);
+        color: var(--color-white);
+        padding: 1rem;
+        border-radius: 50%;
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid var(--color-white);
+        box-shadow: 10px 13px 30px 0px #043A533D;
+    }
+    .award-badge img {
+        width: 50px;
+        height: 50px;
+    }
+    .award-badge span {
+        color: var(--color-white);
+        font-weight: 300;
+    }
+    .award-badge h1 {
+        color: var(--color-white);
+        margin-bottom: 0px;
+    }
+    .building-bridges-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .building-bridges-text h2 {
+        font-size: 3.75rem;
+        font-weight: 700;
+        color: var(--text-color);
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        text-align: left;
+    }
+    .building-bridges-text h2 span {
+        color: var(--gray-color);
+    }
+    .building-bridges-text p {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+}
