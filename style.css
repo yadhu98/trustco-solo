@@ -17,6 +17,7 @@
     --tex-color-yellow: #F0B73F;
     --accent-color: #043A53;
     --gray-color: #92A7B0;
+    --text-color-gray-two: #043A53;
 }
 
 
@@ -856,20 +857,6 @@ footer {
 }
 
 
-/* Other Structural Elements */
-
-header {
-    padding: 1rem;
-}
-
-footer {
-    padding: 1rem;
-    background-color: var(--secondary-color);
-    color: var(--background-color);
-    text-align: center;
-}
-
-
 /* Building Bridges Section */
 
 #building-bridges-section {
@@ -1105,4 +1092,47 @@ footer {
         margin-bottom: 1.5rem;
         text-align: left;
     }
+}
+
+
+/* Numbers section */
+
+#numbers-section {
+    padding: 2rem 1rem;
+}
+
+.numbers-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.number-secton-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number-secton-text h1 {
+    margin-bottom: 0px;
+    color: var(--primary-color);
+}
+
+.number-secton-text span {
+    font-weight: 700;
+    color: var(--text-color-gray-two);
+}
+
+
+/* Other Structural Elements */
+
+header {
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    text-align: center;
 }
