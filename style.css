@@ -604,10 +604,6 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-.video-section-heading {
-    border: 1px solid red
-}
-
 .video-section-heading-left {
     display: flex;
     flex-direction: column;
@@ -1538,6 +1534,7 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 .blogs-section-content {
@@ -1668,6 +1665,94 @@ footer {
     .blog-seeall-mobile {
         display: none;
     }
+}
+
+
+/* CTA banner */
+
+#cta-banner {
+    background-color: var(--text-color);
+    padding: 2rem 1rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3%;
+}
+
+.cta-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.cta-content-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cta-content h1 {
+    text-align: left;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+
+.cta-content .view-reports-btn {
+    background-color: var(--tex-color-yellow);
+    border-radius: 30px;
+    width: 270px;
+    /* color: var(--secondary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s ease; */
+}
+
+.arrow-yellow {
+    margin-left: 7%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0a639;
+}
+
+.arrow-yellow span {
+    font-size: 1.5rem;
+    /* margin-left: 0.5rem; */
+    /* width: 20px; */
+}
+
+.cta-button:hover {
+    background-color: #e0a639;
+}
+
+.cta-subtext {
+    font-size: 0.9rem;
+    color: var(--gray-color);
+    margin: 1rem 0;
+}
+
+.cta-image {
+    /* display: none; */
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+    object-fit: cover;
 }
 
 
