@@ -1632,6 +1632,44 @@ footer {
     margin-left: 0.5rem;
 }
 
+.blog-seeall-mobile {
+    display: none;
+}
+
+@media (min-width: 375px) {
+    .see-all-btn {
+        display: none;
+    }
+    .blogs-grid {
+        overflow: hidden;
+        width: 350px;
+    }
+    .blog-card {
+        min-width: 340px;
+    }
+    .blog-seeall-mobile {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .see-all-btn {
+        display: block;
+    }
+    .blogs-grid {
+        width: 1250px;
+    }
+    .blog-seeall-mobile {
+        display: none;
+    }
+}
+
 
 /* Other Structural Elements */
 
