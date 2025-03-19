@@ -1780,7 +1780,7 @@ header {
 
 #footer-section {
     background-color: var(--footer-bg);
-    padding: 2rem 1rem;
+    padding: 2rem 0rem 0rem 0rem;
     width: 100%;
     margin-top: 3%;
 }
@@ -1819,7 +1819,7 @@ header {
 
 .footer-description {
     font-size: 0.9rem;
-    color: var(--gray-color);
+    color: var(--text-color);
     margin-top: 0.5rem;
     width: 350px;
     line-height: 1.5;
@@ -1872,7 +1872,7 @@ header {
 
 .footer-column ul li a {
     text-decoration: none;
-    color: var(--gray-color);
+    color: var(--text-color);
     font-size: 0.9rem;
     transition: color 0.3s ease;
 }
@@ -1913,4 +1913,58 @@ header {
         margin-top: 0;
         text-align: left;
     }
+}
+
+
+/* Site Credit Section */
+
+.site-credit-content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    margin-top: 2%;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: #eeeeee;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+
+.site-links a {
+    text-decoration: none;
+    color: var(--gray-color);
+    font-size: 0.9rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.site-links a:hover {
+    color: var(--primary-color);
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.globe-icon {
+    font-size: 1rem;
+    color: var(--gray-color);
+}
+
+.language {
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+
+.dropdown-arrow {
+    font-size: 0.8rem;
+    color: var(--gray-color);
 }
