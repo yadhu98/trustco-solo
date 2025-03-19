@@ -1894,7 +1894,11 @@ header {
     }
     .footer-description {
         margin-top: 10%;
+        margin-left: 2.5%;
         text-align: center;
+    }
+    .footer-links {
+        margin-left: 5%;
     }
 }
 
@@ -1967,4 +1971,11 @@ header {
 .dropdown-arrow {
     font-size: 0.8rem;
     color: var(--gray-color);
+}
+
+@media (min-width: 375px) {
+    .site-links {
+        display: flex;
+        text-align: center;
+    }
 }
