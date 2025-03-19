@@ -1775,6 +1775,9 @@ header {
     padding: 1rem;
 }
 
+
+/* Footer Section */
+
 #footer-section {
     background-color: var(--footer-bg);
     padding: 2rem 1rem;
@@ -1876,4 +1879,38 @@ header {
 
 .footer-column ul li a:hover {
     color: var(--primary-color);
+}
+
+@media (min-width: 375px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-logo {
+        display: block;
+        width: 100%;
+    }
+    .footer-logo-section-one {
+        align-items: center;
+    }
+    .footer-description {
+        margin-top: 10%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-content {
+        flex-direction: row;
+    }
+    .footer-logo {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-logo-section-one {
+        align-items: flex-start;
+    }
+    .footer-description {
+        margin-top: 0;
+        text-align: left;
+    }
 }
