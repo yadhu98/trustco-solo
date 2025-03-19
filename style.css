@@ -344,7 +344,7 @@ footer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 130px;
+    justify-content: space-around;
 }
 
 
@@ -378,9 +378,12 @@ footer {
     }
     #client-brand-section {
         padding: 2rem 1rem;
+        display: flex;
+        gap: 20px
     }
     #client-brand-section>div>p {
         font-size: 0.8rem;
+        margin: 0;
     }
     .client-brands {
         display: grid;
@@ -388,9 +391,6 @@ footer {
         grid-template-rows: auto auto;
         gap: 1rem;
         justify-content: center;
-        max-width: 600px;
-        margin: 0 auto;
-        margin-left: 0px !important;
     }
     .client-brands img:nth-child(1) {
         grid-column: 1;
@@ -2195,4 +2195,75 @@ header {
 
 .submit-btn:hover {
     background-color: #0056b3;
+}
+
+@media (min-width: 375px) {
+    #contact-section {
+        padding: 5rem 1rem 0rem 1rem;
+    }
+    .contact-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-content-top h1 {
+        font-size: 1.5rem;
+    }
+    .contact-content-bottom {
+        flex-direction: column;
+    }
+    .contact-form {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-form-section {
+        flex-direction: column;
+    }
+    .form-group {
+        margin-bottom: 0;
+    }
+    .contact-form-check-n-btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-check {
+        flex-direction: column;
+        gap: 20px
+    }
+}
+
+@media (min-width: 1024px) {
+    #contact-section {
+        padding: 4rem 1rem;
+    }
+    .contact-options {
+        flex-direction: row;
+        align-items: center;
+    }
+    .contact-content-top h1 {
+        font-size: 5rem;
+    }
+    .contact-content-bottom {
+        flex-direction: row;
+    }
+    .contact-content-bottom h2 {
+        font-size: 5rem;
+    }
+    .contact-form {
+        width: 1250px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-form-section {
+        flex-direction: row;
+    }
+    .form-group {
+        margin-bottom: 0;
+    }
+    .form-check {
+        flex-direction: row;
+        gap: 20px
+    }
 }
