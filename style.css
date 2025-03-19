@@ -37,7 +37,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--header-bg);
+    background-color: var(--color-white);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -233,7 +233,6 @@ a:hover {
 
 header {
     padding: 1rem;
-    background-color: var(--secondary-color);
 }
 
 main {
@@ -1978,4 +1977,222 @@ header {
         display: flex;
         text-align: center;
     }
+}
+
+
+/* Contact section */
+
+#contact-section {
+    padding: 4rem 0rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-content-top {
+    background-color: var(--secondary-color);
+    padding: 4% 0%;
+}
+
+.contact-content-bottom {
+    padding: 4% 0%;
+}
+
+.contact-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+    font-size: 1rem;
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-option {
+    background-color: var(--color-white);
+    border-radius: 16px;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: var(--shadow);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact-option img {
+    height: 50px;
+    width: 50px;
+    margin: 0 0 1rem 0;
+}
+
+.contact-option h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.contact-option p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.option-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.contact-form {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    text-align: left;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form-section {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid #91A7B0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    border-radius: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.form-group:has(input:focus) {
+    border: 1px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.form-group:has(textarea:focus) {
+    border: 1px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+
+/* .form-icon {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+} */
+
+
+/* .form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--gray-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+} */
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-check {
+    display: flex;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+    color: var(--gray-color);
+    justify-content: space-between;
+}
+
+.form-check input {
+    display: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.custom-checkbox .unchecked {
+    display: block;
+}
+
+.custom-checkbox .checked {
+    display: none;
+}
+
+.checkbox-container input[type="checkbox"]:checked+.custom-checkbox .unchecked {
+    display: none;
+}
+
+.checkbox-container input[type="checkbox"]:checked+.custom-checkbox .checked {
+    display: block;
+}
+
+.checkbox-container input[type="checkbox"]:focus+.custom-checkbox .unchecked,
+.checkbox-container input[type="checkbox"]:focus+.custom-checkbox .checked {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+.submit-btn {
+    background-color: var(--accent-color);
+    color: var(--color-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
 }
